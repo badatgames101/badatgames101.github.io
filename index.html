@@ -1,15 +1,63 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styleSheet.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a href="/" id="navbar_logo"> Next </a>
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="/" class="navbar_links">
+                        home
+                    </a>
+                </li>
+                <li class="navbar_item">
+                    <a href="/Unreal.html" class="navbar_links">
+                        Unreal engine
+                    </a>
+                </li>
+                <li class="navbar_item">
+                    <a href="/Projects.html" class="navbar_links">
+                        Current Projects
+                    </a>
+                </li>
+                <li class="navbar_btn">
+                    <a href="/FinishedProjects.html" class="button">
+                        Finished Projects
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-<html>
-    <head>
-        <title>Portfolio</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+    <div class="main">
+        <div class="main_container">
+            <div class="main_content">
+                <h1>heading 1.</h1>
+                <h2>heading 2.</h2>
+                <button class="main_btn"><a href="/">get started</a></button>
+                </div>
+                <div class="main_img-container">
+                    <img src="images/img1.svg" alt="pic" id="main_img"/>
+                </div>
+            </div>
+        </div>
+    </div>
     
-    <body>
-        <p>blank page</p>
-        <button class="button" onclick="document.location='https://google.com'">google</button>
-    </body>
-    
-    <script src="./script.js"></script>
+
+
+    <script src="script.js" ></script>
+
+</body>
 </html>
