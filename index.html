@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styleSheet.css">
+    <link rel="stylesheet" href="./styleSheet.css">
 </head>
 <body>
     
     <nav class="navbar">
         <div class="navbar_container">
-            <a href="/" id="navbar_logo"> Next </a>
+            <a href="/" id="navbar_logo"> LOGO </a>
             <div class="navbar_toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -18,46 +18,69 @@
             </div>
             <ul class="navbar_menu">
                 <li class="navbar_item">
-                    <a href="/" class="navbar_links">
-                        home
-                    </a>
+                    <a href="./index.html" class="navbar_links"><span class="hoverLink">Home</span></a>
                 </li>
                 <li class="navbar_item">
-                    <a href="/Unreal.html" class="navbar_links">
-                        Unreal engine
-                    </a>
+                    <a href="./unreal/Unreal.html" class="navbar_links"><span class="hoverLink">Unreal engine</span></a>
                 </li>
                 <li class="navbar_item">
-                    <a href="/Projects.html" class="navbar_links">
-                        Current Projects
-                    </a>
+                    <a href="./projects/Projects.html" class="navbar_links"><span class="hoverLink">Current Projects</span></a>
                 </li>
                 <li class="navbar_btn">
-                    <a href="/FinishedProjects.html" class="button">
-                        Finished Projects
-                    </a>
+                    <a href="./finsished_projects/FinishedProjects.html" class="button"><span class="hoverLink">Finished Projects</span></a>
                 </li>
             </ul>
         </div>
     </nav>
+    
+    <video muted loop class="video1" width="100%" height="520" autoplay>
+        <source src="source/project_compilation.mp4" type="video/mp4">
+    your browser does not support the videoa tag,
+    </video>
 
-    <div class="main">
-        <div class="main_container">
-            <div class="main_content">
-                <h1>heading 1.</h1>
-                <h2>heading 2.</h2>
-                <button class="main_btn"><a href="/">get started</a></button>
-                </div>
-                <div class="main_img-container">
-                    <img src="images/img1.svg" alt="pic" id="main_img"/>
-                </div>
-            </div>
+<div class="aboutme_section">
+    <h1 class="aboutme_header">
+        real
+    </h1>
+        <div  class="aboutme">
+            <p class="aboutmetxt">
+                this is the about me section
+            </p>
         </div>
-    </div>
+</div>
+
+<div class="projects">
+    <h1 class="projects_header">
+        real
+    </h1>
+</div>
+
+
+    <ul class="image_list">
+        <li>
+            <div class="image_1">
+                <img src="source/sunset-1373171_1280.jpg" alt="Project1">
+                <span class="img1desc">
+                    <span>
+                        <p class="imagedescriptiontext">
+                            this is a place holder image for later
+                        </p>
+                    </span>
+            </div>
+        </li>
+        <div class="image_2">
+            <img src="source/sunset-1373171_1280.jpg" alt="project2">
+            <span class="img2desc">
+                <p class="imagedescriptiontext">
+                    this is a place holder image for later
+                </p>
+            </span>
+        </div>
+    </ul>
+    
     
 
 
-    <script src="script.js" ></script>
 
 </body>
 </html>

@@ -1,9 +1,17 @@
+body{
+    overflow-x: hidden;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    color: white;
+    background-color: rgb(0, 0, 0);
 }
+
+
 
 .navbar {
     background: black;
@@ -23,7 +31,6 @@
     height: 80px;
     z-index: 1;
     width: 100%;
-    max-width: 1300px;
     margin: 0 auto;
     padding: 0 50px;
 }
@@ -34,6 +41,7 @@
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     display: flex;
@@ -50,7 +58,7 @@
     display: flex;
     align-items: center;
     list-style: none;
-    text-align: left;
+    text-align: right;
 }
 
 .navbar_item {
@@ -58,22 +66,39 @@
 }
 
 .navbar_links {
+    position: relative;
+    top: 50%;
+    right: 30px;
+    transform: translate(0%, -50%);
+    padding-left: 30px;
     color: white;
     font-size: 24;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    padding: 0 35px;
-    height: 100%;
-    width: 200%
+    height: fit-content;
+    width: fit-content;
+    text-wrap: nowrap;
+     
 }
 
+.hoverLink {
+    width: fit-content;
+    height: fit-content;
+    transition: all 0.15s ease-in;
+    background-color: transparent;
+}
+
+.hoverLink:hover {
+    color: orangered;
+}
 .navbar_btn {
+    position: relative;
+    right: -10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 15px;
     width: 100%;
 }
 
@@ -97,18 +122,13 @@
     transition: all 0.5s ease;
 }
 
-.navbar_links:hover {
-    color: orangered;
-    transition: all 0.5s ease;
-}
-
 @media screen and (max-width: 960px) {
     .navbar_container {
         display: flex;
         justify-content: space-between;
         height: 50px;
         width: 100%;
-        max-width: 1300px;
+        max-width: fit-content;
         z-index: 1;
         padding: 0;
     }
@@ -122,23 +142,27 @@
         top: -1000px;
         opacity: 0;
         transition: all 0.5 ease;
-        height: 50vh;
+        height: 50px;
         z-index: -1;
         background: black;
     }
 
     .navbar_menu.active {
-        background: black;
+        background: rgb(0, 0, 0);
         top: 100%;
+        left: 0;
         opacity: 1;
-        transition: all 0.5 ease;
+        transition: all 2.5 ease;
         height: 50vh;
+        position: center;
         font-size: 25px;
+        align-items: center;
     }
 
     #navbar_logo {
         padding-left: 25px;
-    }
+        padding-right: 50px;
+        }
 
     .navbar_toggle .bar {
         width: 25px;
@@ -170,31 +194,119 @@
 
     .navbar_btn {
         padding-bottom: 32px;
+        right: 10px;
     }
 
     .button {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 80%;
-        height: 80px;
+        width: max-content;
+        height: max-content;
         margin: 0;
+        right: -100;
+        position: center;
     }
 
     .navbar_toggle .bar {
         display: block;
         cursor: pointer;
+        transition: all 0.2 ease-in-out;
     }
-
-    #mobile-menu.isactive .bar:nth-child(2) {
-        opacity: 0;
-    }
-
+    
     #mobile-menu.isactive .bar:nth-child(1) {
         transform: translate(8px) rotate(45deg);
     }
-
+    
+        #mobile-menu.isactive .bar:nth-child(2) {
+            opacity: 0;
+        }
+    
     #mobile-menu.isactive .bar:nth-child(3) {
         transform: translate(-8px) rotate(-45deg);
     }
+}
+
+.video1{
+    height: auto;
+    width: 2000px;
+}
+
+.aboutme_section{
+    width: screen;
+    height: 300px;
+    transform: translate(10, -4px);
+    background-color: rgb(0, 0, 0);
+}
+
+.aboutme_header{
+    font-size: 54px;
+    color: rgb(255, 255, 255);
+    width: max-content;
+    transform: translate(900px);
+    background-color: transparent;
+}
+
+.aboutme{
+    transform: translate(5%);
+    width: 90%;
+    height: 200px;
+    background-color: rgb(88, 88, 88);
+    color: white;
+}
+
+.aboutmetxt{
+    background: transparent;
+}
+
+.projects{
+    width: 100%;
+    height: 100px;
+    background-color: #c91919;
+}
+
+.projects_header{
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    position: absolute;
+    text-align: center;
+    transform: translate(900px);
+    font-size: 60px;
+    width: screen;
+}
+
+.imagedescriptiontext{
+    background-color: transparent;
+}
+
+.image_1{
+    scale: 0.4;
+    transform: translate(-200px, -500px);
+}
+
+.img1desc {
+    float: right;
+    position: absolute;
+    transform: translate(12px);
+    font-size: 52px; 
+    font-weight: bold;
+    width: 700px;
+    height: 700px;
+    background-color: #c91919;
+}
+
+.image_2{
+    scale: 0.4;
+    transform: translate(-200px, -1200px);
+}
+
+.img2desc{
+    float: right;
+    position: absolute;
+    transform: translate(12px);
+    font-size: 52px; 
+    font-weight: bold;
+    width: 800px;
+    height: 700px;
+    background-color: #c91919;
 }
