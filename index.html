@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./styleSheet.css">
 </head>
 <body>
-    
+    <!--header-->
     <nav class="navbar">
         <div class="navbar_container">
             <a href="/" id="navbar_logo"> LOGO </a>
@@ -32,54 +32,78 @@
             </ul>
         </div>
     </nav>
-    
-    <video muted loop class="video1" width="100%" height="520" autoplay>
+
+    <!--video-->
+    <video muted loop class="video1" width="100%" height="100%" autoplay>
         <source src="source/project_compilation.mp4" type="video/mp4">
-    your browser does not support the videoa tag,
+        your browser does not support the videoa tag,
     </video>
 
-<div class="aboutme_section">
-    <h1 class="aboutme_header">
-        real
-    </h1>
-        <div  class="aboutme">
-            <p class="aboutmetxt">
-                this is the about me section
-            </p>
-        </div>
-</div>
+    <div id="VBscroll" class="videobutton">
+        <span class="vidbutton" > ⇅ </span>
+    </div>
 
-<div class="projects">
-    <h1 class="projects_header">
-        real
-    </h1>
-</div>
+    <!--about me-->
+    <div id="aboutMeSeciton" class="aboutme_section">
+        <h1 class="aboutme_header">
+            About me
+        </h1>
+            <div  class="aboutme">
+                <p class="aboutmetxt">
+                    I enjoy tinkering around inside of Unreal Engine & creating small projects, 
+                    used in part to test the limits of gameplay mechanics. 
+                    I also have a searing passion for all things related to technology, whether it be software or hardware 
+                    - currently, I've grown accustom specifically to Virtual Reality. 
+                    I have an eagerness for learning a vast variety of skills & programming languages, 
+                    mainly HTML, CSS & C++ (Java Script is also an option, although not one that is a priority at the moment). 
+                    I am currently enrolled in a Level 3 BTEC Games Technology course with 
+                    3 years of PhotosShop experience & 2 years of experience inside of Maya and Unreal Engine. In regards to a career path, 
+                    I see myself as either a gameplay programmer or a generalist programmer within Unreal Engine.
+                </p>
+            </div>
+    </div>
+
+    <!--projects-->
+    <div class="projects">
+        <h1 class="projects_header">
+            Projects
+        </h1>
+    </div>
 
 
     <ul class="image_list">
         <li>
             <div class="image_1">
-                <img src="source/sunset-1373171_1280.jpg" alt="Project1">
+                <img class="showClip" src="source/portals.png" alt="Project1">
                 <span class="img1desc">
                     <span>
                         <p class="imagedescriptiontext">
-                            this is a place holder image for later
+                            This was one of the first projects that i was genuainly intersted in. 
+                            <p class="imagedescriptiontext" > <br>
+                                this porject was an amazing learning experiance for me and this not so simple project of making 
+                                two portals helped me to realise that i loved created mechanics for games instead of the entire game itself
+                            </p>
                         </p>
                     </span>
-            </div>
-        </li>
-        <div class="image_2">
-            <img src="source/sunset-1373171_1280.jpg" alt="project2">
-            <span class="img2desc">
-                <p class="imagedescriptiontext">
-                    this is a place holder image for later
-                </p>
-            </span>
+                </div>
+            </li>
         </div>
     </ul>
     
+    <div class="image_2">
+        <img class="showClip" src="source/fps.gif" alt="project2">
+        <span class="img2desc">
+            <p class="imagedescriptiontext">
+                This was another project that i started in my own time to try and combine different animations.
+                <p class="imagedescriptiontext" > <br>
+                    this porject was used more as a way for me to 
+                    figure out my strengths and weaknesses withing unreal engine 4.27 and a way for me to solidify what i 
+                    currently know into something that i can expand on later.
+                </p>
+            </p>
+        </span>
     
-
+    <script src="./script.js" ></script>
 
 
 </body>
